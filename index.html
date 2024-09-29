@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send SMS from Excel Data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Message mate</h1>
+    <form id="smsForm">
+        <label for="fileInput">Upload Excel File:</label>
+        <input type="file" id="fileInput" accept=".xlsx, .xls" required>
+
+        <label for="indexInput">Enter Index Number:</label>
+        <input type="number" id="indexInput" required>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
